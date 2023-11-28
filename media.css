@@ -1,0 +1,13 @@
+@media(max-width:425px){
+    .container{
+        flex-direction: column;
+        padding: 2vw;
+        gap: 5vw;
+    }
+    .cats{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+}

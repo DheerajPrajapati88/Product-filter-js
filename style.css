@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    display: flex;
+    padding: 50px;
+}
+.leftMenu{
+    flex: 1;
+    position: relative;
+    height: 400px;
+}
+.price{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+.content{
+    flex: 5;
+}
+.search{
+    padding: 8px;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid gray;
+    border-radius: 40px;
+    box-shadow: 2px 5px 10px #2222221b;
+    outline: 0;
+}
+.search:focus{
+
+    border: 2px solid green;
+}
+h1{
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: gray;
+    margin-top: 10px;
+}
+.cats{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 10px 0;
+
+}
+.cat{
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.cat:hover{
+    color:green;
+}
+.products{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+.priceText{
+    z-index: 1;
+    font-weight: 550;
+    font-size: 15px;
+
+}
+input[type='range']{
+    background-color: springgreen;
+    -webkit-appearance: none;
+    border-radius:10px;
+    height: 10px;
+
+}
+    
+input[type='range']::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 20px;
+    background: #434343;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+.product{
+   width: 250px;
+   background-color: #222;
+   border-radius: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 10px;
+   position: relative;
+   overflow: hidden;
+}
+.product::after{
+content: "";
+position: absolute;
+width: 100%;
+height: 50%;
+background: linear-gradient(rgb(10, 85, 47),rgba(0, 255, 128, 0.818));
+bottom: -20%;
+
+border-top-right-radius:100%;
+border-top-left-radius: 100%;
+
+
+}
+img{
+    width: 150px;
+    object-position: center;
+    object-fit:contain;
+    z-index: 1;
+    filter: drop-shadow(0px 10px 10px #00000046);
+    
+}
+.name{
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: capitalize;
+    z-index: 1;
+}
